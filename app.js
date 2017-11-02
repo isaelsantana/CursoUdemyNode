@@ -1,8 +1,7 @@
 var app = require('./config/server');
-var rotaHome = require('./app/routes/home')(app);
-var rotaNoticias = require('./app/routes/noticias')(app);
-var rotaAdmin = require('./app/routes/admin')(app);
-var con = require('./app/data/ConectionDB')();
+
+var con  = app.app.data.ConectionDB();
+
 
 
 

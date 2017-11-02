@@ -1,5 +1,9 @@
 var mysql  = require('mysql');
-var con  = mysql.createConnection({
+
+
+var createDB = function(){
+    var con=
+        mysql.createConnection({
         port : 3306 ,
         database : "teste",
         user : "root",
@@ -7,8 +11,14 @@ var con  = mysql.createConnection({
         localAddress : "localhost"
     });
 
-module.exports = function(){
     return con;
+}
+  
+
+
+module.exports = function(){
+        return createDB;
+
 }
 
 
