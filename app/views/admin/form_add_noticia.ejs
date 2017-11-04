@@ -8,9 +8,18 @@
 
 	<form>
 		<label>Titulo noticia</label>
-		<input type="text" name="txtNoticia" id="txtNoticia" value="<%=noticia.titulo%>">
+		<input type="text" name="titulo" id="titulo" value="<%=noticia.titulo%>">
+		</br>
+		<label>Resumo Notícia</label>
+		<input type="text" name="resumo" id="resumo" value="<%=noticia.resumo%>" >
+		</br>
 		<label>Notícia</label>
-		<textarea name="txtNoticia" rows="4" cols="30" ></textarea>
+		<textarea name="noticia" rows="4" cols="30" ><%=noticia.noticia%></textarea>
+		</br>
+		<label>Autor</label>
+		<input type="text" name="autor" id="autor" value="<%=noticia.autor%>">
+		</br>
+
 
 		<input type="submit" value="Gravar" id="btnGravar" name="btnGravar">
 	</form>
